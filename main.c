@@ -12,7 +12,6 @@ char *my_strdup(const char *s) {
     return p;
 }
 
-/* this goes in whatever header defines my_strdup */
 char *my_strdup(const char *s);
 #define strdup(x) my_strdup(x)
 
@@ -122,7 +121,6 @@ int main()
 	}
 
 	freeTree(*fileTree);
-	// free(fileTree->root);
 	free(fileTree);
 
 	return 0;
